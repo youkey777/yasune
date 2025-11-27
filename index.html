@@ -30,19 +30,15 @@
             </div>
 
             <div class="manga-wrapper">
-                <!-- 4コマ漫画1 -->
-                <div class="manga-container">
-                    <h3 class="manga-subtitle">主婦のミキさんの場合</h3>
-                    <div class="yonkoma">
-                        <img src="./manga_1.png" alt="4コマ漫画1: 主婦がYasuNe Mallで節約に成功するストーリー" class="manga-image">
-                    </div>
-                </div>
-
-                <!-- 4コマ漫画2 -->
-                <div class="manga-container">
-                    <h3 class="manga-subtitle">働くママのアヤさんの場合</h3>
-                    <div class="yonkoma">
-                        <img src="./manga_2.png" alt="4コマ漫画2: 働くママがスキマ時間でお得にお買い物" class="manga-image">
+                <!-- 続き漫画（横長カード） -->
+                <div class="manga-container-wide">
+                    <div class="manga-story-wrapper">
+                        <div class="manga-story-item">
+                            <img src="./漫画01.png" alt="YasuNe Mallのお買い物ストーリー 前編" class="manga-image">
+                        </div>
+                        <div class="manga-story-item">
+                            <img src="./漫画02.png" alt="YasuNe Mallのお買い物ストーリー 後編" class="manga-image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,6 +51,22 @@
                 <h2 class="section-title">お得なポイント</h2>
             </div>
 
+            <!-- 目次カード -->
+            <div class="benefits-intro">
+                <div class="benefits-intro-content">
+                    <div class="benefits-intro-image">
+                        <img src="./目次.png" alt="YasuNe Mallのお得なポイント一覧" class="intro-img">
+                    </div>
+                    <div class="benefits-intro-text">
+                        <h3 class="benefits-intro-title">お得になるお買い物が<br class="sp-only">こんなにたくさん！</h3>
+                        <p class="benefits-intro-description">
+                            YasuNe Mallには、毎日の暮らしを応援する<br class="sp-only">お得な仕組みがいっぱい。<br>
+                            送料無料から産地直送、キャンペーンまで、<br class="sp-only">驚きの特典をチェック！
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="benefits-grid">
                 <!-- お試し品送料無料 -->
                 <div class="benefit-card card-green">
@@ -63,7 +75,7 @@
                         <h3 class="benefit-title">お試し品は送料無料！</h3>
                         <p class="benefit-description">初めての商品も気軽にお試し。お試し品カテゴリの商品なら、なんと送料0円でお届け！</p>
                         <div class="screenshot-wrapper">
-                            <img src="./screenshot_01.png" alt="お試し品送料無料のスクリーンショット" class="screenshot-img">
+                            <img src="./01お試し.png" alt="お試し品送料無料のスクリーンショット" class="screenshot-img">
                             <div class="screenshot-note">※実際の画面イメージ</div>
                         </div>
                     </div>
@@ -76,7 +88,7 @@
                         <h3 class="benefit-title">単品購入は4,000円以上で送料無料</h3>
                         <p class="benefit-description">まとめ買いでさらにお得！4,000円以上のご購入で送料が無料になります。</p>
                         <div class="screenshot-wrapper">
-                            <img src="./screenshot_02.png" alt="4000円以上送料無料のスクリーンショット" class="screenshot-img">
+                            <img src="./02単品.png" alt="4000円以上送料無料のスクリーンショット" class="screenshot-img">
                             <div class="screenshot-note">※カート画面で送料が自動で0円に！</div>
                         </div>
                     </div>
@@ -88,10 +100,9 @@
                     <div class="benefit-content">
                         <h3 class="benefit-title">産地直送品や冷凍食品までとてもお得に購入できます</h3>
                         <p class="benefit-description">新鮮な産地直送品から便利な冷凍食品まで、驚きの価格でラインナップ。毎日の食卓が豊かになる！</p>
-                        <div class="screenshot-wrapper">
-                            <img src="https://placehold.co/800x500/e0f7fa/00695c?text=産地直送品・冷凍食品のスクリーンショット"
-                                alt="産地直送品・冷凍食品のスクリーンショット" class="screenshot-img">
-                            <div class="screenshot-note">※ここに実際のサイトスクリーンショットを貼ってください</div>
+                        <div class="screenshot-wrapper dual-images">
+                            <img src="./03産直.png" alt="産地直送品のスクリーンショット" class="screenshot-img half-img">
+                            <img src="./03冷凍.png" alt="冷凍食品のスクリーンショット" class="screenshot-img half-img">
                         </div>
                     </div>
                 </div>
@@ -103,8 +114,7 @@
                         <h3 class="benefit-title">有料割引で使えるサービスなど、様々なものがお得な価格で</h3>
                         <p class="benefit-description">プレミアム会員なら、さらに特別価格でご提供。日用品から贅沢品まで、すべてがもっとお得に！</p>
                         <div class="screenshot-wrapper">
-                            <img src="https://placehold.co/800x500/f3e5f5/6a1b9a?text=有料割引サービスのスクリーンショット"
-                                alt="有料割引サービスのスクリーンショット" class="screenshot-img">
+                            <img src="./04優待.png" alt="有料割引サービスのスクリーンショット" class="screenshot-img">
                             <div class="screenshot-note">※ここに実際のサイトスクリーンショットを貼ってください</div>
                         </div>
                     </div>
@@ -145,8 +155,7 @@
                         <h3 class="benefit-title">PLAIOアプリのここから使えるので毎日チェックしてね</h3>
                         <p class="benefit-description">スマホでいつでもどこでも！PLAIOアプリを開いて、お得な商品を見逃さずチェックしましょう。</p>
                         <div class="screenshot-wrapper">
-                            <img src="https://placehold.co/600x800/e0f2f1/004d40?text=PLAIOアプリのスクリーンショット"
-                                alt="PLAIOアプリのスクリーンショット" class="screenshot-img app-screenshot">
+                            <img src="./06アプリ.jpg" alt="PLAIOアプリのスクリーンショット" class="screenshot-img app-screenshot">
                             <div class="screenshot-note">※PLAIOアプリのメニューからYasuNe Mallにアクセス！</div>
                         </div>
                     </div>

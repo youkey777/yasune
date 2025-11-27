@@ -1,5 +1,5 @@
 /* =========================================
-   基本設定
+   基本設宁E
    ========================================= */
 *,
 *::before,
@@ -30,7 +30,7 @@ img {
     height: auto;
 }
 
-/* PC/スマホ共通のユーティリティ */
+/* PC/スマ�E共通�EユーチE��リチE�� */
 .sp-only {
     display: none;
 }
@@ -40,8 +40,16 @@ img {
    ========================================= */
 .hero-banner-image {
     width: 100%;
-    background-color: var(--c-yellow);
     line-height: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 1200px;
+    line-height: 0;
+    background-color: var(--c-yellow);
 }
 
 .hero-main-visual {
@@ -51,7 +59,7 @@ img {
 }
 
 /* =========================================
-   使い方ガイド (Section)
+   使ぁE��ガイチE(Section)
    ========================================= */
 .guide-section {
     max-width: 900px;
@@ -105,7 +113,7 @@ img {
     border-top-color: #333;
 }
 
-/* ステップカード共通 */
+/* スチE��プカード�E送E*/
 .step-card {
     margin-bottom: 60px;
     position: relative;
@@ -223,7 +231,7 @@ img {
 }
 
 /* =========================================
-   コンテンツエリア共通
+   コンチE��チE��リア共送E
    ========================================= */
 .content-section {
     width: 100%;
@@ -266,6 +274,28 @@ img {
     align-items: flex-start;
 }
 
+/* 横長の漫画カード */
+.manga-container-wide {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.manga-story-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.manga-story-item {
+    flex: 1;
+}
+
 .manga-container {
     flex: 1;
     margin-bottom: 0;
@@ -295,31 +325,76 @@ img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================================
-   お得ポイントセクション
+   お得�Eイントセクション
    ========================================= */
 .benefits-section {
     margin-bottom: 60px;
 }
 
+/* イントロカード */
+.benefits-intro {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.benefits-intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.benefits-intro-text {
+    width: 100%;
+}
+
+.benefits-intro-title {
+    font-size: 1.8rem;
+    color: var(--c-red);
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.benefits-intro-description {
+    font-size: 1.1rem;
+    color: var(--c-text);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.benefits-intro-image {
+    width: 100%;
+    max-width: 700px;
+}
+
+.intro-img {
+    width: 100%;
+    height: auto;
+}
+
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* ���1�� */`r`n    max-width: 900px;`r`n    margin: 0 auto;
     gap: 30px;
 }
 
 .benefit-card {
     position: relative;
     margin-bottom: 0;
-    padding: 25px 20px;
+    padding: 15px 20px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    min-height: 450px;
 }
 
 .benefit-card:hover {
@@ -390,24 +465,19 @@ img {
     flex-direction: column;
 }
 
-.benefit-title {
-    font-size: 1.3rem;
-    color: var(--c-text);
-    margin-bottom: 10px;
-    font-weight: bold;
-    line-height: 1.4;
-}
+.benefit-title {`r`n    font-size: 1.1rem;`r`n    color: var(--c-text);`r`n    margin-bottom: 8px;`r`n    font-weight: bold;`r`n    line-height: 1.3;`r`n}
 
-.benefit-description {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
+.benefit-description {`r`n    font-size: 0.85rem;`r`n    color: #555;`r`n    margin-bottom: 10px;`r`n    line-height: 1.5;`r`n}
 
 .screenshot-wrapper {
     text-align: center;
     margin-top: auto;
+}
+
+.screenshot-wrapper.dual-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .screenshot-img {
@@ -419,23 +489,23 @@ img {
     border: 2px solid #f0f0f0;
 }
 
+.screenshot-img.half-img {
+    width: 48%;
+    flex: 1;
+}
+
 .app-screenshot {
     max-width: 200px;
 }
 
-.screenshot-note {
-    font-size: 0.8rem;
-    color: #888;
-    margin-top: 5px;
-    font-style: italic;
-}
+.screenshot-note {`r`n    font-size: 0.75rem;`r`n    color: #888;`r`n    margin-top: 3px;`r`n    font-style: italic;`r`n}
 
-/* キャンペーングリッド（05番カード内） */
+/* キャンペ�EングリチE���E�E5番カード�E�E�E*/
 .campaign-mini-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .campaign-item {
@@ -445,7 +515,9 @@ img {
 .campaign-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
     transition: transform 0.2s;
@@ -456,14 +528,14 @@ img {
 }
 
 .campaign-caption {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     color: #555;
     margin: 0;
 }
 
 /* =========================================
-   最終CTAセクション
+   最絁ETAセクション
    ========================================= */
 .final-cta-section {
     background: repeating-conic-gradient(from 0deg, #ffe900 0deg 10deg, #fff176 10deg 20deg);
@@ -566,31 +638,27 @@ img {
 }
 
 /* =========================================
-   タブレット用レスポンシブ (481px~768px)
+   タブレチE��用レスポンシチE(481px~768px)
    ========================================= */
 @media (max-width: 768px) and (min-width: 481px) {
     .section-title {
         font-size: 2rem;
     }
 
-    .benefit-title {
-        font-size: 1.2rem;
-    }
+    .benefit-title {`r`n    font-size: 1.1rem;`r`n    color: var(--c-text);`r`n    margin-bottom: 8px;`r`n    font-weight: bold;`r`n    line-height: 1.3;`r`n}
 
-    .benefit-description {
-        font-size: 0.9rem;
-    }
+    .benefit-description {`r`n    font-size: 0.85rem;`r`n    color: #555;`r`n    margin-bottom: 10px;`r`n    line-height: 1.5;`r`n}
 }
 
 /* =========================================
-   スマホ用レスポンシブ (max-width: 480px)
+   スマ�E用レスポンシチE(max-width: 480px)
    ========================================= */
 @media (max-width: 480px) {
     .sp-only {
         display: block;
     }
 
-    /* 使い方ガイド調整 */
+    /* 使ぁE��ガイド調整 */
     .guide-header {
         margin-bottom: 40px;
     }
@@ -607,7 +675,7 @@ img {
         font-size: 1.6rem;
     }
 
-    /* ステップカードの縦積み化 */
+    /* スチE��プカード�E縦積み匁E*/
     .step-content,
     .step-content.reverse {
         flex-direction: column;
@@ -636,15 +704,24 @@ img {
         width: 80%;
     }
 
-    /* 新規セクションのレスポンシブ */
+    /* 新規セクションのレスポンシチE*/
     .section-title {
         font-size: 1.8rem;
     }
 
-    /* 4コマ漫画を縦並びに戻す */
+    /* 漫画セクションのレスポンシブ対応 */
     .manga-wrapper {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .manga-container-wide {
+        padding: 15px;
+    }
+
+    .manga-story-wrapper {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .manga-container {
@@ -655,7 +732,16 @@ img {
         font-size: 1.2rem;
     }
 
-    /* ベネフィットを1列に戻す */
+    /* イントロカードのレスポンシブ対応 */
+    .benefits-intro-title {
+        font-size: 1.5rem;
+    }
+
+    .benefits-intro-description {
+        font-size: 1rem;
+    }
+
+    /* ベネフィチE��めE列に戻ぁE*/
     .benefits-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -677,18 +763,18 @@ img {
         left: 20px;
     }
 
-    .benefit-title {
-        font-size: 1.4rem;
-    }
+    .benefit-title {`r`n    font-size: 1.1rem;`r`n    color: var(--c-text);`r`n    margin-bottom: 8px;`r`n    font-weight: bold;`r`n    line-height: 1.3;`r`n}
 
-    .benefit-description {
-        font-size: 1rem;
-    }
+    .benefit-description {`r`n    font-size: 0.85rem;`r`n    color: #555;`r`n    margin-bottom: 10px;`r`n    line-height: 1.5;`r`n}
 
-    /* キャンペーングリッドを1列に */
+    /* キャンペ�EングリチE��スマホ対応 */
     .campaign-mini-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .campaign-item img {
+        max-height: 100px;
     }
 
     .screenshot-img {
@@ -726,3 +812,4 @@ img {
         font-size: 1.4rem;
     }
 }
+
